@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import FacebookEmojiCounter from './Facebookemoji'
 import * as serviceWorker from './serviceWorker';
-
+import ToggleMode from './ToggleModeComponent';
 ReactDOM.render(
     <React.Fragment>
     <FacebookEmojiCounter type= "Like"/>
