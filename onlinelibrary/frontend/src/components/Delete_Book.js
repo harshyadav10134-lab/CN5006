@@ -9,9 +9,9 @@ export default function DeleteBook(props)
     let params = useParams();
           useEffect(()=>{
         console.log("useeff delete"+params.id)
-        axios.post("http://localhost:5000/deleteBook/"+params.id)
+        axios.post("https://upgraded-space-succotash-jjprw6gqgx6qfqgpr-5000.app.github.dev/deleteBook/"+params.id)
         .then(res => {
-            axios.get("http://localhost:5000/allbooks")
+            axios.get("https://upgraded-space-succotash-jjprw6gqgx6qfqgpr-5000.app.github.dev/allbooks")
         .then(res => {
                 
                 setState(res.data)

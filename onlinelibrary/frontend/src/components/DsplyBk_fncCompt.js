@@ -11,7 +11,7 @@ import DisplayData from './DisplayData';
 //variable Books  as data recieved  axious lib
 export default function FncDisplayBooks() {
     const [Books, setBooks] = useState([]);
-    const url ="http://localhost:5000/allbooks/"
+    const url ="https://upgraded-space-succotash-jjprw6gqgx6qfqgpr-5000.app.github.dev/allbooks/"
 
     useEffect(()=>{
       axios.get(url)

@@ -10,7 +10,7 @@ function Book_UpDateForm(props) {
     PubYear: 1990,
   });
 
-  let url= "http://localhost:5000/"
+  let url= "https://upgraded-space-succotash-jjprw6gqgx6qfqgpr-5000.app.github.dev/"
   let params = useParams();
  
   const handleChange = (e) => {
@@ -23,7 +23,7 @@ function Book_UpDateForm(props) {
 
 // this is on compunt Did Mount Event analogy
 useEffect(() => {
-  axios.get('http://localhost:5000/getbook/'+params.id)
+  axios.get('https://upgraded-space-succotash-jjprw6gqgx6qfqgpr-5000.app.github.dev/getbook/'+params.id)
       .then(res => {
           // set the state variable from 
           //the data received from the axios api
