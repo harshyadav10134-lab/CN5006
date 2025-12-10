@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose=require( 'mongoose');
 console.log(` Mongoose installed version: ${mongoose.version}`);
 const MONG_URI = process.env.MONG_URI || 'mongodb+srv://harshyadav10134_db_user:VOGJrdSNjNx5PotY@cluster0.ztg0pvs.mongodb.net/library';
 async function connectDB() {
@@ -11,6 +11,7 @@ async function connectDB() {
         process.exit(1);
         }
 }
+connectDB()
 // Optional: Handle connection events
 mongoose.connection.on('disconnected', () => {
     console.log(' MongoDB disconnected');
@@ -24,4 +25,4 @@ process.on('SIGINT', async () => {
     console.log('MongoDB connection closed due to app termination');
     process.exit(0);
 });
-export default connectDB;
+module.exports = connectDB;
